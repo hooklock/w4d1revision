@@ -1,0 +1,36 @@
+body {
+  font-family: 'Open-Sans' , sans-serif;
+  text-align: center;
+  background-color: purple;
+  color: #999;
+}
+
+h1{
+  color: #000
+}
+
+nav{
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  background: #599a68;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a{
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+nav a:hover{
+  color: #32673f;
+}
