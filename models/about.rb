@@ -7,6 +7,8 @@ class About
     @phone = phone
   end
 
+#Street through Phone used by the controller.rb file for the
+#separate parts if the address
   def street()
     return "3 ARGYLE HOUSE"
   end
@@ -23,10 +25,13 @@ class About
     return "0131558030"
   end
 
+#converts the postcode to all UPPERCASE
   def pcupcase()
     return postcode.upcase
   end
 
+#converts a string of two words to CamelCase by removing the space,
+#Capitalising the first letter of the two words and joining them back together.
   def camelcase
     return "code clan".split(' ').collect(&:capitalize).join
   end

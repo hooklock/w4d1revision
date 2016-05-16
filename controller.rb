@@ -5,14 +5,13 @@ require_relative './models/about'
 require_relative './models/camelcase'
 require 'json'
 
+# sets the home location
 get '/' do
   erb :home
 end
 
-# get '/address' do
-#   erb :address
-# end
-
+# Street through phone have not function on their own
+# but are pulled togehter by the get '/address' method
 get '/street/' do
   about = About.new(params[:street])
   return "#{about.address()}"
@@ -47,6 +46,7 @@ get '/address' do
   return results.to_json
 end
 
+# method for the camelcase.rb file that returns the embedded Ruby
 get '/camelcase/:word' do
   camelcase = CamelCase.new(params[:word])
   @camel = camelcase.camel
