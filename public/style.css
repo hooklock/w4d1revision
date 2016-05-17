@@ -2,7 +2,7 @@
 body {
   font-family: 'Open-Sans' , sans-serif;
   text-align: center;
-  background-color: purple;
+  background-color: #e1ebf5;
   color: #999;
 }
 
@@ -17,7 +17,7 @@ nav{
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
-  background: #599a68;
+  background: #d4ecdc;
 }
 
 /*Removes the bullet points created by the ul tag*/
@@ -40,5 +40,5 @@ nav a{
 
 /*sets a colour change when teh mouse is hovered over a link*/
 nav a:hover{
-  color: #32673f;
+  color: #fcdfd7;
 }
